@@ -23,18 +23,20 @@ function App() {
       <button onClick={createAppointment}>+ new</button>
       <ul>
         {Appointments.map((Appointment) => (
-          <li key={Appointment.id}>{Appointment.type}</li>
+          <li key={Appointment.id}>{Appointment.type}{Appointment.appointmentDate}</li>
         ))}
       </ul>
-      <div>
-        🥳 App successfully hosted. Try creating a new Appointment.
-        <br />
-        <a href="https://docs.amplify.aws/react/start/quickstart/#make-frontend-updates">
-          Review next step of this tutorial.
-        </a>
-      </div>
+      
     </main>
   );
 }
 
 export default App;
+
+/*<div>
+        🥳 App successfully hosted. Try creating a new Appointment.
+        <br />
+        <a href="https://docs.amplify.aws/react/start/quickstart/#make-frontend-updates">
+          Review next step of this tutorial.
+        </a>
+      </div>*/
