@@ -14,7 +14,7 @@ function App() {
   }, []);
 
   function createAppointment() {
-    client.models.Appointment.create({ content: window.prompt("Appointment content") });
+    client.models.Appointment.create({ type: window.prompt("Appointment content") });
   }
 
   return (
