@@ -23,7 +23,7 @@ function App() {
       <button onClick={createAppointment}>+ new</button>
       <ul>
         {Appointments.map((Appointment) => (
-          <li key={Appointment.id}>{Appointment.type} {Appointment.appointmentDate ? new Date(Appointment.appointmentDate).toLocaleString():null}</li>
+          <li key={Appointment.id}>{Appointment.type} {Appointment.appointmentDate ? new Date(Appointment.appointmentDate).toString():null}</li>
         ))}
       </ul>
       
