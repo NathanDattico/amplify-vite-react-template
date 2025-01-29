@@ -20,7 +20,6 @@ function App() {
   return (
     <main>
       <h1>My Appointments</h1>
-      <button onClick={createAppointment}>+ new</button>
       <ul>
         {Appointments.map((Appointment) => (
           <li key={Appointment.id}>{Appointment.type} {Appointment.appointmentDate ? (new Date(new Date(Appointment.appointmentDate).setHours(new Date(Appointment.appointmentDate).getHours()-1))).toLocaleString():null}</li>
