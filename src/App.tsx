@@ -13,9 +13,9 @@ function App() {
     });
   }, []);
 
-  function createAppointment() {
-    client.models.Appointment.create({ type: window.prompt("Appointment content") });
-  }
+  //function createAppointment() {
+  //  client.models.Appointment.create({ type: window.prompt("Appointment content") });
+  //}
 
   return (
     <main>
